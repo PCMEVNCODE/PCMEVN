@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+    <style>
+        .vanban {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .click {
+            width: 100px;
+            background-color: red;
+            padding: 15px;
+            margin-left: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="vanban">
+        <h1>
+            Clicking now!
+        </h1>
+    </div>
+
+    <button class="click" onclick="updateClickCount()">
+        <h1>
+            Click
+        </h1>
+    </button>
+    <div class="van">
+        <h2>
+        Số lần click:
+        <span id="clickCount">0</span>
+        </h2>
+    </div>
+    <script>
+        let so = 0;
+
+        function updateClickCount() {
+            so++;
+            document.getElementById("clickCount").textContent = so;
+        }
+    </script>
+</body>
+</html>
